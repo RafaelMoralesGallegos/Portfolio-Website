@@ -12,11 +12,7 @@
     {% block styles %}
     <!-- Load Bootstrap-Flask CSS here -->
     {{ bootstrap.load_css() }}
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="{{ url_for('static', filename='assets/favicon.ico') }}"
-    />
+    <link rel="icon" href="static/assets/favicon.ico" />
 
     <!-- Font Awesome icons (free version)-->
     <script
@@ -40,9 +36,11 @@
       rel="stylesheet"
     />
     {% endblock %}
+  </head>
+  <body>
     <header
       class="masthead"
       style="background-image: url('{{ url_for('static', filename='assets/img/banner.jpg') }}')"
     ></header>
-  </head>
+  </body>
 </html>
