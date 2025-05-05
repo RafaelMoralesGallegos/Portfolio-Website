@@ -39,11 +39,9 @@
       rel="stylesheet"
     />
     {% endblock %}
-  </head>
-  <body>
     <header
       class="masthead"
-      style="background-image: url('..static/assets/img/banner.jpg')"
+      style="background-image: url('{{ url_for('static', filename='assets/img/banner.jpg') }}')"
     ></header>
-  </body>
+  </head>
 </html>

@@ -7,7 +7,7 @@ bootstrap = Bootstrap5(app)
 
 @app.route("/")
 def get_home():
-    return render_template("index.hmtl")
+    return render_template("index.html")
 
 
 if __name__ == "__main__":
