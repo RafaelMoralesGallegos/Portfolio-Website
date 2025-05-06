@@ -1,89 +1,43 @@
-<!DOCTYPE html>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-  <head>
-    <title>Rafael's Personal Site</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <script
-      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://use.fontawesome.com/releases/v6.3.0/css/all.css"
-      rel="stylesheet"
-    />
-    <script
-      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v6.3.0/css/all.css"
-      integrity="sha384-..."
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/all.min.css') }}"
-    />
-
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/styles.css') }}"
-    />
-  </head>
-  <body class="is-preload">
-    <!-- Header -->
-    <section id="header">
-      <header>
-        <span class="image avatar"
-          ><img
-            src="{{ url_for('static', filename='assets/img/avatar.png') }}"
-            alt="Rafael's Profile Image"
-        /></span>
-        <h1 id="logo">Rafael Morales</h1>
-        <p>Data & Valuation Analyst<br />Python Developer</p>
-      </header>
-      <nav id="nav">
-        <ul>
-          <li>
-            <a
-              href="{{ url_for('get_home') }}"
-              class="{% if active_page == 'about' %}active{% endif %}"
-              >About</a
-            >
-          </li>
-          <li>
-            <a
-              href="{{ url_for('skills') }}"
-              class="{% if active_page == 'skills' %}active{% endif %}"
-              >Things I Can Do</a
-            >
-          </li>
-          <li>
-            <a
-              href="{{ url_for('projects') }}"
-              class="{% if active_page == 'projects' %}active{% endif %}"
-              >A Few Accomplishments</a
-            >
-          </li>
-          <li>
-            <a
-              href="{{ url_for('contact') }}"
-              class="{% if active_page == 'contact' %}active{% endif %}"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </section>
-  </body>
-</html>
+<section id="header">
+  <header>
+    <span class="image avatar"
+      ><img
+        src="{{ url_for('static', filename='assets/img/avatar.png') }}"
+        alt="Rafael's Profile Image"
+    /></span>
+    <h1 id="logo">Rafael Morales</h1>
+    <p>Data & Valuation Analyst<br />Python Developer</p>
+  </header>
+  <nav id="nav">
+    <ul>
+      <li>
+        <a
+          href="{{ url_for('get_home') }}"
+          class="{% if active_page == 'about' %}active{% endif %}"
+          >About</a
+        >
+      </li>
+      <li>
+        <a
+          href="{{ url_for('skills') }}"
+          class="{% if active_page == 'skills' %}active{% endif %}"
+          >Things I Can Do</a
+        >
+      </li>
+      <li>
+        <a
+          href="{{ url_for('projects') }}"
+          class="{% if active_page == 'projects' %}active{% endif %}"
+          >A Few Accomplishments</a
+        >
+      </li>
+      <li>
+        <a
+          href="{{ url_for('contact') }}"
+          class="{% if active_page == 'contact' %}active{% endif %}"
+          >Contact</a
+        >
+      </li>
+    </ul>
+  </nav>
+</section>
