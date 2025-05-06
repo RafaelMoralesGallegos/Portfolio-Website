@@ -24,7 +24,7 @@ def projects():
     )
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
     return render_template("contact.html", section_id="contact", active_page="contact")
 
