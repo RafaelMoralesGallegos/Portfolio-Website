@@ -102,14 +102,19 @@
     });
 
   // Title Bar.
+  var logoHtml = $("#logo").length
+    ? $("#logo").html()
+    : "<strong>Rafael</strong>";
+
   $titleBar = $(
     '<div id="titleBar">' +
       '<a href="#header" class="toggle"></a>' +
       '<span class="title">' +
-      $("#logo").html() +
+      logoHtml +
       "</span>" +
       "</div>"
   ).appendTo($body);
+  console.log("Logo content:", $("#logo").html());
 
   // Panel.
   $header.panel({

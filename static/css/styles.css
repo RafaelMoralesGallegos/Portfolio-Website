@@ -1880,7 +1880,7 @@ header h6 + p {
 }
 
 header.major h2 {
-  color: #864aca;
+  color: #8f87f1;
   font-size: 3.5em;
 }
 
@@ -2495,7 +2495,7 @@ ul.feature-icons li:before {
 }
 
 ul.feature-icons li:before {
-  background: #864aca;
+  background: #8f87f1;
   border-radius: 100%;
   color: #ffffff;
   display: block;
@@ -2795,7 +2795,7 @@ input[type="button"]:disabled,
   -ms-justify-content: space-between;
   justify-content: space-between;
   background: #864aca;
-  color: #ddd2f2;
+  color: #fed2e2;
   height: 100%;
   overflow-y: auto;
   position: fixed;
@@ -2824,7 +2824,7 @@ input[type="button"]:disabled,
 }
 
 #header header p {
-  color: #dcb7ea;
+  color: #8f87f1;
 }
 
 #header a {
