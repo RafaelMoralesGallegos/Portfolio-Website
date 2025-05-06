@@ -4,6 +4,7 @@ from flask import Flask, render_template, send_from_directory
 from flask_bootstrap import Bootstrap5
 
 app = Flask(__name__)
+app.config["SECRET_KEY"] = os.environ.get("FLASK_KEY")
 bootstrap = Bootstrap5(app)
 
 
