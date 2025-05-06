@@ -1,46 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
   <head>
+    <title>Rafael's Personal Site</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      content="width=device-width, initial-scale=1, user-scalable=no"
     />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Rafael Morales III</title>
-    {% block styles %}
-    <!-- Load Bootstrap-Flask CSS here -->
-    {{ bootstrap.load_css() }}
-    <link rel="icon" href="static/assets/favicon.ico" />
-
-    <!-- Font Awesome icons (free version)-->
     <script
       src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Google fonts-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
     <link
-      href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
       rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link
       href="{{ url_for('static', filename='css/styles.css') }}"
-      rel="stylesheet"
     />
-    {% endblock %}
+    <link rel="icon" href="static/assets/favicon.ico" />
   </head>
-  <body>
-    <header
-      class="masthead"
-      style="background-image: url('{{ url_for('static', filename='assets/img/banner.jpg') }}')"
-    ></header>
+  <body class="is-preload">
+    <!-- Header -->
+    <section id="header">
+      <header>
+        <span class="image avatar"
+          ><img
+            src="{{ url_for('static', filename='assets/img/avatar.png') }}"
+            alt="Rafael's Profile Image"
+        /></span>
+        <p>Data & Valuation Analyst<br />Python Developer</p>
+      </header>
+      <nav id="nav">
+        <ul>
+          <li><a href="#one" class="active">About</a></li>
+          <li><a href="#two">Things I Can Do</a></li>
+          <li><a href="#three">A Few Accomplishments</a></li>
+          <li><a href="#four">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
   </body>
 </html>
