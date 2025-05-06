@@ -19,8 +19,7 @@
       <section id="{{ section_id }}">
         <div class="container">
           <header class="major">
-            <h2>Hi. I'm Rafael Morales</h2>
-            <p>{% block subtitle %}add subtitle{% endblock %}</p>
+            {% block subtitle %}add subtitle{% endblock %}
           </header>
           {% block main_text %} add main text{% endblock %}
         </div>
