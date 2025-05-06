@@ -38,9 +38,27 @@
       </header>
       <nav id="nav">
         <ul>
-          <li><a href="{{ url_for('get_home') }}" class="active">About</a></li>
-          <li><a href="{{ url_for('skills') }}">Things I Can Do</a></li>
-          <li><a href="#three">A Few Accomplishments</a></li>
+          <li>
+            <a
+              href="{{ url_for('get_home') }}"
+              class="{% if active_page == 'about' %}active{% endif %}"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="{{ url_for('skills') }}"
+              class="{% if active_page == 'skills' %}active{% endif %}"
+              >Things I Can Do</a
+            >
+          </li>
+          <li>
+            <a
+              href="{{ url_for('projects') }}"
+              class="{% if active_page == 'projects' %}active{% endif %}"
+              >A Few Accomplishments</a
+            >
+          </li>
           <li><a href="#four">Contact</a></li>
         </ul>
       </nav>

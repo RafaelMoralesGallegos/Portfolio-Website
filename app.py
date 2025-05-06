@@ -9,12 +9,19 @@ bootstrap = Bootstrap5(app)
 
 @app.route("/")
 def get_home():
-    return render_template("index.html", section_id="about")
+    return render_template("index.html", section_id="about", active_page="about")
 
 
 @app.route("/skills")
 def skills():
-    return render_template("skills.html", section_id="skills")
+    return render_template("skills.html", section_id="skills", active_page="skills")
+
+
+@app.route("/projects")
+def projects():
+    return render_template(
+        "projects.html", section_id="projects", active_page="projects"
+    )
 
 
 @app.route("/favicon.ico")

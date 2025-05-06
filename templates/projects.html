@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+<body>
+  {% block subtitle %}A Few Accomplishments {% endblock %} {% block main_text %}
+  <p>
+    I have successfully developed executable applications using Python, creating
+    intuitive GUIs with tkinter and enhancing them with ttkbootstrap for a
+    polished look.
+  </p>
+  <div class="features">
+    <article>
+      <a
+        href="https://unsplash.com/photos/white-and-brown-concrete-house-near-trees-at-daytime-QmU_1X9ZHXo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        class="image"
+        ><img
+          src="{{ url_for('static', filename='assets/img/pic01.jpg') }}"
+          alt=""
+      /></a>
+      <div class="inner">
+        <h4>Automated Excel Generator</h4>
+        <p>
+          Creation of a GUI using Python, OpenPyXL and Tkinter to standardize
+          valuation models as excel spreadsheets.
+        </p>
+      </div>
+      Photo by
+      <a
+        href="https://unsplash.com/@eduardmilitaru?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        >eduard</a
+      >
+      on Unsplash
+    </article>
+    <article>
+      <a
+        href="https://unsplash.com/photos/a-piece-of-wood-with-a-hole-in-it-xyTDdXbmjOc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        class="image"
+        ><img
+          src="{{ url_for('static', filename='assets/img/pic02.jpg') }}"
+          alt=""
+      /></a>
+      <div class="inner">
+        <h4>Web Scraping Project</h4>
+        <p>
+          Project to web scrape using beautiful soup and selenium move data from
+          one form to another, more usable, structure.
+        </p>
+      </div>
+      Photo by
+      <a
+        href="https://unsplash.com/@lucia_sorrentino?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+      >
+        Lucia Sorrentino
+      </a>
+      on Unsplash
+    </article>
+    <article>
+      <a
+        href="https://unsplash.com/photos/brown-wooden-drawer-lRoX0shwjUQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        class="image"
+        ><img
+          src="{{ url_for('static', filename='assets/img/pic03.jpg') }}"
+          alt=""
+      /></a>
+      <div class="inner">
+        <h4>Amortization Table</h4>
+        <p>
+          Creation of amortization tables for loans using Numpy, Pandas and
+          SQLite for their management and booking.
+        </p>
+      </div>
+      Photo by
+      <a
+        href="https://unsplash.com/@jankolar?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        >Jan Antonin Kolar</a
+      >
+      on Unsplash
+    </article>
+  </div>
+  {% endblock %}
+</body>
