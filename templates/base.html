@@ -1,0 +1,33 @@
+<head>
+  <link
+    rel="icon"
+    href="{{ url_for('static', filename='assets/favicon.ico') }}"
+  />
+</head>
+<body>
+  {% include "header.html" %}
+  <!-- Wrapper -->
+  <div id="wrapper">
+    <div class="image main" data-position="center">
+      <img
+        src="{{ url_for('static', filename='assets/img/banner.jpg') }}"
+        alt=""
+      />
+    </div>
+    <!-- Main -->
+    <div id="main">
+      <section id="{{ section_id }}">
+        <div class="container">
+          <header class="major">
+            <h2>Hi. I'm Rafael Morales</h2>
+            <p>{% block subtitle %}add subtitle{% endblock %}</p>
+          </header>
+          <p style="text-align: justify">
+            {% block main_text %} add main text{% endblock %}
+          </p>
+        </div>
+      </section>
+    </div>
+    {% include 'footer.html' %}
+  </div>
+</body>

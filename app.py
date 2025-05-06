@@ -9,7 +9,7 @@ bootstrap = Bootstrap5(app)
 
 @app.route("/")
 def get_home():
-    return render_template("index.html")
+    return render_template("index.html", section_id="one")
 
 
 @app.route("/favicon.ico")

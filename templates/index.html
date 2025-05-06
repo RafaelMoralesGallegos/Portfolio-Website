@@ -1,22 +1,13 @@
-<link
-  rel="icon"
-  href="{{ url_for('static', filename='assets/favicon.ico') }}"
-/>
+{% extends 'base.html' %}
 
 <body>
-  {% include "header.html" %}
-  <header>
-    <!-- Page Header-->
-    <div class="container position-relative px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-md-10 col-lg-8 col-xl-7">
-          <div class="site-heading">
-            <h1>Rafael's Blog</h1>
-            <span class="subheading">A collection of random musings.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  {% include 'footer.html' %}
+  {% block subtitle %}Somethings you should know about me {% endblock %} {%
+  block main_text %} Detail-oriented Python Developer with expertise in creating
+  user-friendly GUI applications and executable tools using ttkbootstrap for
+  vibrant theming. Experienced in automating workflows and financial modeling in
+  Excel through OpenPyXL, complemented by proficiency in Git for version
+  control. Skilled in web automation with Selenium and currently expanding
+  knowledge in Flask and API development to build robust web applications. Adept
+  at delivering innovative solutions that streamline processes and add value to
+  organizational objectives. {% endblock %}
 </body>
