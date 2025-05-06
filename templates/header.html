@@ -59,7 +59,13 @@
               >A Few Accomplishments</a
             >
           </li>
-          <li><a href="#four">Contact</a></li>
+          <li>
+            <a
+              href="{{ url_for('contact') }}"
+              class="{% if active_page == 'contact' %}active{% endif %}"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
     </section>

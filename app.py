@@ -24,6 +24,11 @@ def projects():
     )
 
 
+@app.route("/contact")
+def contact():
+    return render_template("contact.html", section_id="contact", active_page="contact")
+
+
 @app.route("/favicon.ico")
 def favicon():
     return send_from_directory(
